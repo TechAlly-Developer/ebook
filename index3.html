@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles1.css" />
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div>
+
+    <div class="header article-header">
+        <h1 class="node-title">
+          <span>புதிய பாடத்திட்டம் 2022</span>
+        </h1>
+    </div>
+    <div class="hero-section">
+        <h2>முதல் பருவம்</h2>
+        <div class="content-section">
+          <div class="wrapper">
+            <div class="col-1">
+                <h4>நிலை - 1</h4>
+              </div>
+              <div class="col-2">
+                <h4><span>படத்திற்கு உரிய முதல் எழுத்தைப் படத்தோடு<br/>
+                    பொருத்தவும்</span></h4>
+              </div>
+              <div class="col-3">
+                <h4>பாடம் - 1</h4>
+              </div>
+          </div>
+        </div>
+    <div>
+
+        <div class="audio-container">
+            <audio controls>
+                <source src="01e01.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    
+    <table id="table1" class="droppable">
+        <td><b>படங்கள்</b></td>
+        <td><b>விடைகள்</b></td>
+        <td><b>விருப்பத்தேர்வு</b></td>
+        <tr>
+            
+            <td>
+                <img src="Images/apple_150x150.png" alt="Image 1">
+            </td>
+            <td>
+                <div class="draggable-box" id="imageBox1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+              </td>
+            <td>
+                <div class="letter-box" id="letterA" draggable="true" ondragstart="drag(event)">அ</div>
+              </td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+                <img src="Images/waterfall_150x150.png" alt="Image 2">
+            </td>
+            <td>
+                <div class="draggable-box" id="imageBox2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+              </td>
+              <td>
+                <div class="letter-box" id="letterB" draggable="true" ondragstart="drag(event)">ஆ</div>
+              </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="Images/squirrel_150x150.png" alt="Image 3">
+            </td>
+            <td>
+                <div class="draggable-box" id="imageBox3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+              </td>
+              <td>
+                <div class="letter-box" id="letterC" draggable="true" ondragstart="drag(event)">ஆ</div>
+              </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="Images/tortoise_150x150.jpeg" alt="Image 4">
+            </td>
+            <td>
+                <div class="draggable-box" id="imageBox4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+              </td>
+              <td>
+                <div class="letter-box" id="letterD" draggable="true" ondragstart="drag(event)">அ</div>
+              </td>
+        </tr>
+    </table>
+    <button class="reset-btn check-answer" onclick="checkAnswers()">சரிபார்</button>
+    <div id="score-display">மதிப்பெண்: 0/4</div>
+    <footer>
+        <div class="wrapper1">
+          <div class="col-left">
+            <button class="footer-button"><a href="index2.html">முன்</a></button>
+          </div>
+          <div class="col-right">
+            <button class="footer-button">
+              <a href="./index.html">பின்</a>
+            </button>
+          </div>
+        </div>
+      </footer>
+</div>
+</body>
+</html>
